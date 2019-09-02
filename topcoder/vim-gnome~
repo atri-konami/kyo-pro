@@ -1,0 +1,4 @@
+#!/bin/sh
+ARGS="$@"
+gnome-terminal --maximize -e "vim $ARGS"
+

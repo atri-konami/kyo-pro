@@ -1,0 +1,1 @@
+ n,m,x,y=gets.chomp.split.map(&:to_i) + gets.chomp.split.map(&:to_i);a=gets.chomp.split.map(&:to_i);b=gets.chomp.split.map(&:to_i);t=sum=0;while true;i=a.index{|x|x>=t};break if i.nil?;t+=a[i]-t;t+=x;i=b.index{|x|x>=t};break if i.nil?;t+=b[i]-t;t+=y;sum+=1;end;puts sum
